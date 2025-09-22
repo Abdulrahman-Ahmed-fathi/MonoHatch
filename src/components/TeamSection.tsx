@@ -7,54 +7,56 @@ type TeamMember = {
   linkedinUrl: string;
 };
 
+const withBase = (path: string) => `${import.meta.env.BASE_URL}${path.replace(/^\//, "")}`;
+
 const teamMembers: TeamMember[] = [
   // Replace with real team data
   {
     name: "Eman Mishref & UI/UX Designer",
     role: "Founder",
-    photoUrl: "/uploads/Eman.jpg",
+    photoUrl: "uploads/Eman.jpg",
     linkedinUrl: "https://www.linkedin.com/in/eman-mishref/",
   },
   {
     name: "Ahmed Algrgawy",
     role: "Project Manager",
-    photoUrl: "/uploads/Ahmed.jpg",
+    photoUrl: "uploads/Ahmed.jpg",
     linkedinUrl: "https://www.linkedin.com/in/ahmed-algrgawy?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
   },
   {
     name: "Abdulrahman Ahmed",
     role: "Backend Developer",
-    photoUrl: "/uploads/Abdulrahman Ahmed.jpg",
+    photoUrl: "uploads/Abdulrahman Ahmed.jpg",
     linkedinUrl: "https://www.linkedin.com/in/abdulramanahmed/?locale=en_US",
   },
   {
     name: "Abdulrahman Abass",
     role: "Frontend Developer",
-    photoUrl: "/uploads/Abass.jpg",
+    photoUrl: "uploads/Abass.jpg",
     linkedinUrl: "https://www.linkedin.com/in/abdelrahman-abass/",
   },
   {
     name: "Yousef Abdelmaksod",
     role: "AI Engineer",
-    photoUrl: "/uploads/Yousef.jpg",
+    photoUrl: "uploads/Yousef.jpg",
     linkedinUrl: "https://www.linkedin.com/in/youssefabdelmaksod",
   },
   {
     name: "Amira Heider",
     role: "Chief Marketing Organizer",
-    photoUrl: "/uploads/Amira.jpg",
+    photoUrl: "uploads/Amira.jpg",
     linkedinUrl: "https://www.linkedin.com/in/amira-heider-868314275?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
   },
   {
     name: "Mirna Tarek",
     role: "Flutter Developer",
-    photoUrl: "/uploads/Merna.jpg",
+    photoUrl: "uploads/Merna.jpg",
     linkedinUrl: "https://www.linkedin.com/in/mirna-tarek?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
   },
   {
     name: "Jihad Salim",
     role: "Graphic Designer,Video Editor",
-    photoUrl: "/uploads/Jehad.jpg",
+    photoUrl: "uploads/Jehad.jpg",
     linkedinUrl: "https://www.linkedin.com/in/jihad-salim-74805437a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
   },
 ];
@@ -76,7 +78,7 @@ const TeamSection = () => {
             >
               <div className="relative">
                 <img
-                  src={member.photoUrl}
+                  src={withBase(member.photoUrl)}
                   alt={member.name}
                   className="w-28 h-28 md:w-32 md:h-32 rounded-full object-cover ring-2 ring-white shadow-lg group-hover:scale-[1.03] transition-smooth"
                 />

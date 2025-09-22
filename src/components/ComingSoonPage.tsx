@@ -3,6 +3,8 @@ import { SiX, SiTiktok } from "react-icons/si";
 import PartnershipSection from "./PartnershipSection";
 import TeamSection from "./TeamSection";
 
+const withBase = (path: string) => `${import.meta.env.BASE_URL}${path.replace(/^\//, "")}`;
+
 const ComingSoonPage = () => {
   return (
     <div className="min-h-screen bg-white flex flex-col relative overflow-hidden">
@@ -18,7 +20,7 @@ const ComingSoonPage = () => {
           <div className="flex items-center">
             <div className="w-16 h-16 md:w-12 md:h-12 flex items-center justify-center bg-primary/10 rounded-full">
               <img 
-                src="/uploads/40cbec2e-c9e0-41bb-ab49-6b7340c902de.png" 
+                src={withBase("uploads/40cbec2e-c9e0-41bb-ab49-6b7340c902de.png")} 
                 alt="Mono Hatch Logo" 
                 className="w-10 h-10 md:w-12 md:h-12 object-contain"
               />
@@ -72,7 +74,7 @@ const ComingSoonPage = () => {
           <div className="mb-12 relative">
             <div className="relative inline-block">
               <img 
-                src="/uploads/7b555808-5c3a-46ae-8bf3-dcaf88600117.png" 
+                src={withBase("uploads/7b555808-5c3a-46ae-8bf3-dcaf88600117.png")} 
                 alt="Web maintenance illustration" 
                 className="w-80 md:w-85 lg:w-100 h-auto mx-auto transform hover:scale-105 transition-smooth"
                 style={{
