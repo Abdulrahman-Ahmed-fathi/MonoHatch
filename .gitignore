@@ -89,7 +89,7 @@ dist
 
 # Gatsby files
 .cache/
-public
+# Track public assets (do not ignore `public/`)
 
 # Storybook build outputs
 .out
