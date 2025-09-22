@@ -68,11 +68,11 @@ const TeamSection = () => {
           <p className="mt-2 text-sm md:text-base text-gray-600">The people building Mono Hatch</p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-6 md:gap-8 items-stretch">
           {teamMembers.map((member) => (
             <div
               key={member.name}
-              className="group rounded-2xl bg-white/80 backdrop-blur supports-[backdrop-filter]:bg-white/60 ring-1 ring-gray-200 hover:ring-primary/40 shadow-sm hover:shadow-md transition-smooth p-5 md:p-6 flex flex-col items-center text-center"
+              className="group h-full rounded-2xl bg-white/80 backdrop-blur supports-[backdrop-filter]:bg-white/60 ring-1 ring-gray-200 hover:ring-primary/40 shadow-sm hover:shadow-md transition-smooth p-5 md:p-6 flex flex-col items-center text-center"
             >
               <div className="relative">
                 <img
@@ -83,9 +83,9 @@ const TeamSection = () => {
                 <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-primary/10 to-primary-glow/10 blur-md -z-10 scale-110" />
               </div>
               <div className="mt-4">
-                <div className="font-semibold text-gray-900">{member.name}</div>
+                <div className="font-semibold text-gray-900 break-words leading-snug">{member.name}</div>
                 {member.role && (
-                  <div className="text-xs md:text-sm text-gray-500 mt-0.5">{member.role}</div>
+                  <div className="text-xs md:text-sm text-gray-500 mt-0.5 break-words">{member.role}</div>
                 )}
               </div>
               <div className="mt-4">
