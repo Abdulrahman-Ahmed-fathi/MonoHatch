@@ -1,6 +1,7 @@
 import { Facebook, Instagram } from "lucide-react";
 import { SiX, SiTiktok } from "react-icons/si";
 import PartnershipSection from "./PartnershipSection";
+import TeamSection from "./TeamSection";
 
 const ComingSoonPage = () => {
   return (
@@ -17,7 +18,7 @@ const ComingSoonPage = () => {
           <div className="flex items-center">
             <div className="w-16 h-16 md:w-12 md:h-12 flex items-center justify-center bg-primary/10 rounded-full">
               <img 
-                src="/lovable-uploads/40cbec2e-c9e0-41bb-ab49-6b7340c902de.png" 
+                src="/uploads/40cbec2e-c9e0-41bb-ab49-6b7340c902de.png" 
                 alt="Mono Hatch Logo" 
                 className="w-10 h-10 md:w-12 md:h-12 object-contain"
               />
@@ -71,9 +72,9 @@ const ComingSoonPage = () => {
           <div className="mb-12 relative">
             <div className="relative inline-block">
               <img 
-                src="/web-maintenance.svg" 
+                src="/uploads/7b555808-5c3a-46ae-8bf3-dcaf88600117.png" 
                 alt="Web maintenance illustration" 
-                className="w-[28rem] md:w-[32rem] lg:w-[40rem] xl:w-[44rem] 2xl:w-[48rem] h-auto mx-auto transform hover:scale-105 transition-smooth"
+                className="w-80 md:w-85 lg:w-100 h-auto mx-auto transform hover:scale-105 transition-smooth"
                 style={{
                   animation: 'gentle-float 8s ease-in-out infinite'
                 }}
@@ -110,6 +111,9 @@ const ComingSoonPage = () => {
 
       {/* Partnership Section */}
       <PartnershipSection />
+
+      {/* Team Section */}
+      <TeamSection />
 
       {/* Footer with social media links */}
       <footer className="relative z-10 p-6 md:p-8">
