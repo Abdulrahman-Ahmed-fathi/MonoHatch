@@ -12,8 +12,8 @@ const withBase = (path: string) => `${import.meta.env.BASE_URL}${path.replace(/^
 const teamMembers: TeamMember[] = [
   // Replace with real team data
   {
-    name: "Eman Mishref & UI/UX Designer",
-    role: "Founder",
+    name: "Eman Mishref ",
+    role: "Founder & UI/UX Designer",
     photoUrl: "uploads/Eman.jpg",
     linkedinUrl: "https://www.linkedin.com/in/eman-mishref/",
   },
