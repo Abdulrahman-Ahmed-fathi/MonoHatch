@@ -137,18 +137,6 @@ The project can be deployed to any static hosting service:
 
 This project is private and proprietary to Mono Hatch.
 
-## 👥 Team
-
-- **Developer**: Abdulrahman Ahmed Fathi
-- **Design**: Professional UI/UX design
-- **Partnerships**: TSALEX & Techne Summit 2025
-
-## 📞 Contact
-
-For inquiries about Mono Hatch, please contact:
-- **Email**: [Contact Information]
-- **GitHub**: [https://github.com/Abdulrahman-Ahmed-fathi](https://github.com/Abdulrahman-Ahmed-fathi)
-
 ---
 
 **Mono Hatch** - Building the future of innovation through strategic partnerships and cutting-edge solutions.
